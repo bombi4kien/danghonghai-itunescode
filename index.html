@@ -7,7 +7,7 @@
   <script src="https://cdn.tailwindcss.com"></script>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@800;900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,700&display=swap" rel="stylesheet">
   <style>
     /* Nền màu xanh baby blue pastel dịu mát */
     body {
@@ -18,7 +18,7 @@
         radial-gradient(circle at 50% 85%, rgba(255, 255, 255, 0.5) 0%, transparent 45%),
         linear-gradient(180deg, #b2d6ff 0%, #9ac7fc 50%, #89beff 100%);
       background-attachment: fixed;
-      font-family: -apple-system, BlinkMacSystemFont, "SF Pro Display", "Segoe UI", Roboto, sans-serif;
+      font-family: 'Nunito', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
       color: #0e1424;
     }
 
@@ -27,9 +27,10 @@
       color: #0e1424;
     }
 
-    /* Tiêu đề chính chữ xanh navy phát sáng hào quang trắng */
+    /* Tiêu đề chính chữ xanh navy phát sáng hào quang trắng dùng font Nunito Black */
     .title-glow {
-      font-family: 'Montserrat', sans-serif;
+      font-family: 'Nunito', sans-serif;
+      font-weight: 900;
       color: #0e1424;
       animation: whiteGlowPulse 2.5s infinite ease-in-out;
     }
@@ -79,7 +80,7 @@
       pointer-events: none;
     }
 
-    /* Huy hiệu số thứ tự phong cách bo cong hiện đại */
+    /* Huy hiệu số thứ tự bo tròn hiện đại */
     .step-badge {
       background: linear-gradient(135deg, #0e1424 0%, #1e293b 100%);
       border: 1px solid rgba(255, 255, 255, 0.65);
@@ -139,7 +140,7 @@
       </div>
 
       <!-- Lời dẫn dưới ảnh bìa -->
-      <p class="text-xs sm:text-[13px] leading-relaxed text-[#0e1424] px-1 font-medium relative z-10">
+      <p class="text-xs sm:text-[13.5px] leading-relaxed text-[#0e1424] px-1 font-semibold relative z-10">
         Dùng mã iTunes được phát khi không có điều kiện tự thanh toán hoặc muốn tặng mã cho bạn bè. Mục đích chính là để đẩy mass buy cho <b>ĐẶNG HỒNG HẢI</b>, cùng nhau đưa bài hát lên top #1 iTunes Việt Nam.
       </p>
 
@@ -164,7 +165,7 @@
           <span>📌</span>
           <span>LƯU Ý KHI NHẬN & NHẬP CODE</span>
         </div>
-        <ul class="space-y-1.5 text-[11.5px] leading-relaxed text-[#0e1424]/90 pl-1 font-medium">
+        <ul class="space-y-1.5 text-[12px] leading-relaxed text-[#0e1424]/90 pl-1 font-semibold">
           <li class="flex items-start gap-2">
             <span class="text-blue-600 font-bold">🔹</span>
             <span>Mỗi tài khoản iCloud chỉ được tính <b>01 code / 01 bài hát</b>.</span>
@@ -205,10 +206,10 @@
             CÁC BÀI HÁT
           </h2>
         </div>
-        <span class="text-[11px] text-[#0e1424]/80 font-bold">Bấm bài hát để nhận mã</span>
+        <span class="text-[11.5px] text-[#0e1424]/80 font-bold">Bấm bài hát để nhận mã</span>
       </div>
 
-      <!-- Thẻ bài hát CHẠY VỀ PHÍA EM viền thẻ kính nổi bật -->
+      <!-- Thẻ bài hát CHẠY VỀ PHÍA EM -->
       <div 
         onclick="openModal()" 
         class="theme-card p-3.5 hover:shadow-2xl hover:scale-[1.01] transition-all duration-200 cursor-pointer flex items-center justify-between gap-3 active:scale-[0.99]"
@@ -229,7 +230,7 @@
                 Đang phát mã
               </span>
             </div>
-            <p class="text-[11px] text-[#0e1424]/75 mt-0.5 font-medium">Nghệ sĩ: DANG HONG HAI • iTunes Store</p>
+            <p class="text-[11.5px] text-[#0e1424]/75 mt-0.5 font-semibold">Nghệ sĩ: DANG HONG HAI • iTunes Store</p>
           </div>
         </div>
 
@@ -251,7 +252,7 @@
       </div>
 
       <div id="receiverList" class="max-h-56 overflow-y-auto space-y-2 pr-1 text-xs text-[#0e1424] relative z-10">
-        <div class="text-center py-4 text-[#0e1424]/60 italic text-[11px] font-medium">
+        <div class="text-center py-4 text-[#0e1424]/60 italic text-[11px] font-semibold">
           Đang cập nhật danh sách...
         </div>
       </div>
@@ -274,7 +275,7 @@
           <span>💙</span>
           <span>Dự án: CHẠY VỀ PHÍA EM</span>
         </div>
-        <p class="text-[11px] text-[#0e1424]/70 mt-0.5 font-medium">Nhận mã iTunes quy đổi bài hát</p>
+        <p class="text-[11.5px] text-[#0e1424]/70 mt-0.5 font-semibold">Nhận mã iTunes quy đổi bài hát</p>
       </div>
 
       <!-- Ô nhập tên -->
@@ -284,7 +285,7 @@
           type="text"
           id="userName"
           placeholder="Nhập tên bạn hoặc tên Fandom"
-          class="w-full bg-slate-50 border border-blue-200 rounded-xl px-3.5 py-2.5 text-xs text-[#0e1424] placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-[#0e1424] transition shadow-sm"
+          class="w-full bg-slate-50 border border-blue-200 rounded-xl px-3.5 py-2.5 text-xs text-[#0e1424] placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-[#0e1424] transition shadow-sm font-semibold"
         />
       </div>
 
@@ -304,7 +305,7 @@
         <span class="text-lg flex-shrink-0 mt-[-2px]">💙</span>
         <div class="text-xs text-[#0e1424] leading-relaxed text-left">
           <p class="font-bold text-[#0e1424]" id="thankYouName">Cảm ơn bạn đã lấy mã!</p>
-          <p class="text-[11px] text-[#0e1424]/80 mt-0.5 font-medium">Cùng ủng hộ CHẠY VỀ PHÍA EM lên Top nhé! 💙✨</p>
+          <p class="text-[11.5px] text-[#0e1424]/80 mt-0.5 font-semibold">Cùng ủng hộ CHẠY VỀ PHÍA EM lên Top nhé! 💙✨</p>
         </div>
       </div>
 
@@ -312,7 +313,7 @@
       <div class="bg-blue-50/70 rounded-2xl p-4 border border-blue-200 space-y-2.5">
         <div class="flex items-center justify-between">
           <span class="text-[11px] font-bold tracking-wider text-[#0e1424]">CODE CỦA BẠN</span>
-          <span id="claimCountBadge" class="text-[10px] text-[#0e1424]/70 font-semibold">Chưa lấy mã</span>
+          <span id="claimCountBadge" class="text-[10px] text-[#0e1424]/70 font-bold">Chưa lấy mã</span>
         </div>
 
         <div class="bg-white border border-blue-200 rounded-xl py-3 px-3 text-center shadow-inner">
@@ -341,7 +342,7 @@
   <div id="confirmModal" class="fixed inset-0 bg-black/70 backdrop-blur-sm z-[60] flex items-center justify-center p-4 hidden">
     <div class="bg-white rounded-2xl max-w-xs w-full p-5 border border-blue-200 shadow-2xl text-center space-y-3.5 animate-in fade-in zoom-in duration-150">
       <div class="text-2xl">⚠️</div>
-      <p class="text-xs text-[#0e1424] leading-relaxed font-semibold">
+      <p class="text-xs text-[#0e1424] leading-relaxed font-bold">
         Bạn đã lấy mã trước đó, bạn có chắc chắn muốn lấy thêm mã không?
       </p>
       <div class="grid grid-cols-2 gap-2 pt-1">
@@ -489,16 +490,16 @@
               <span class="text-base flex-shrink-0">💙</span>
               <div class="leading-tight">
                 <span class="font-bold text-[#0e1424]">Cảm ơn "${escapeHtml(person)}" đã lấy mã!</span>
-                <span class="text-[#0e1424]/70 text-[11px] block mt-0.5">Hãy cùng tận hưởng CHẠY VỀ PHÍA EM nhé!</span>
+                <span class="text-[#0e1424]/70 text-[11px] block mt-0.5 font-semibold">Hãy cùng tận hưởng CHẠY VỀ PHÍA EM nhé!</span>
               </div>
             `;
             receiverList.appendChild(item);
           });
         } else {
-          receiverList.innerHTML = '<div class="text-center py-4 text-[#0e1424]/60 italic text-[11px]">Chưa có ai nhận mã, hãy là người đầu tiên!</div>';
+          receiverList.innerHTML = '<div class="text-center py-4 text-[#0e1424]/60 italic text-[11px] font-semibold">Chưa có ai nhận mã, hãy là người đầu tiên!</div>';
         }
       } catch (e) {
-        receiverList.innerHTML = '<div class="text-center py-4 text-[#0e1424]/60 italic text-[11px]">Chưa có ai nhận mã, hãy là người đầu tiên!</div>';
+        receiverList.innerHTML = '<div class="text-center py-4 text-[#0e1424]/60 italic text-[11px] font-semibold">Chưa có ai nhận mã, hãy là người đầu tiên!</div>';
       }
     }
 
